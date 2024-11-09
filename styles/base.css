@@ -1,0 +1,89 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #2b455f;
+    padding: 1rem;
+    text-align: center;
+    color: white; 
+}
+
+.nav-bar {
+    background: #6a98a3;
+    padding: 1rem;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    flex: 1;
+    padding: 0.1rem;
+    text-align: center;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: #2c3e50;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.card {
+    background-color: #4b78a5;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.card h2 {
+    grid-column: 1 / -1;
+    max-height: 28.89px;
+}
+
+.about-me-image {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+section h2{
+    background-color: #2b455f;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer {
+    background: #bdc3c7; 
+    padding: 1rem;
+    text-align: center;
+    color: #2c3e50; 
+}
