@@ -1,0 +1,123 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    display: flex; /* Makes the header a flex container */
+    align-items: center; /* Vertically align items in the header */
+    justify-content: space-between; /* Push the nav and h1 to opposite sides */
+    padding: 10px 20px;
+}
+
+/* Navbar Styles */
+.nav-bar {
+    display: flex; /* Ensures nav content (menu + hamburger) is in a row */
+    align-items: center; /* Vertically aligns nav items */
+    gap: 10px;
+}
+
+/* Align the nav menu to the left */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Links in the nav menu */
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #f0a500;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Adjust the H1 inside the nav bar */
+.nav-bar h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: auto; /* Push the H1 to the far right */
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: #444;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    /* Align H1 and Hamburger for mobile view */
+    .nav-bar h1 {
+        margin-left: 0;
+        text-align: center;
+        flex-grow: 1;
+    }
+}

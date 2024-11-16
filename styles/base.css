@@ -3,7 +3,6 @@ body {
     height: 100vh;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr;
-    font-family: Arial, sans-serif;
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;

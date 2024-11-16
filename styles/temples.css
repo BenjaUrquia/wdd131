@@ -1,0 +1,37 @@
+body{
+    display: grid;
+    height: 97vh;
+    grid-template-rows: auto 1fr auto ;
+    grid-template-columns: auto;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    background-color: #f0e6d6;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul{
+    display: none;
+    list-style-type: none;
+}
+
+#hamburger {
+    background-color: #333333;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px 15px;
+}
+
+footer {
+    background: #f0e6d6; 
+    padding: 1rem;
+    text-align: center;
+}
