@@ -85,3 +85,27 @@ footer {
     text-decoration: none;
     color: black;
 }
+
+
+main p{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* IMAGES */
+
+div{
+    padding: 1rem;
+}
+
+.figure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.figure-grid figure {
+    text-align: center;
+}

@@ -6,8 +6,8 @@ const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 
 
-const nav = document.querySelector("#navMenu");  // nav element
-const navList = document.querySelector("#navList");  // ul element inside nav
+const nav = document.querySelector("#navMenu");
+const navList = document.querySelector("#navList");
 const open = document.querySelector("#hamburger");
 const close = document.querySelector("#close-hamburger");
 const hideCloseButton = document.querySelector("#close-hamburger");
