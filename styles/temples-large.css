@@ -1,26 +1,29 @@
-
 @media (min-width: 1024px) {
 
     /* hamburger not displayed */
-    #hamburger {
+    .open-menu-button,
+    .close-menu-button {
         display: none;
     }
 
     /* nav are displayed */
-    nav ul{
+
+    .nav-list {
         display: flex;
         list-style-type: none;
+        gap: 1rem;
     }
     
-    nav ul li{
+    nav ul li {
         flex: 1 1 100%;
         margin: 0 1rem;
     }
     
-    nav ul li a{
+    .nav-list li a {
         text-decoration: none;
         border-radius: 5px;
         display: block;
+        color: black;
         transition: background-color 0.3s ease;
     }
     

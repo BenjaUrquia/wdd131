@@ -6,13 +6,21 @@ const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 
 
-/* New part */
+const nav = document.querySelector("#navMenu");  // nav element
+const navList = document.querySelector("#navList");  // ul element inside nav
+const open = document.querySelector("#hamburger");
+const close = document.querySelector("#close-hamburger");
+const hideCloseButton = document.querySelector("#close-hamburger");
 
-const hamburgerButton = document.getElementById("hamburger");
-const navMenu = document.querySelector("nav");
 
-hamburgerButton.addEventListener("click", () => {
-    const isExpanded = hamburgerButton.getAttribute("aria-expanded") === "true";
-    hamburgerButton.setAttribute("aria-expanded", !isExpanded);
-    navMenu.classList.toggle("open");
+open.addEventListener("click", () => {
+    nav.classList.add("open");
+    navList.classList.add("open");
+    hideCloseButton.classList.add("open");
+});
+
+close.addEventListener("click", () => {
+    nav.classList.remove("open");
+    navList.classList.remove("open");
+    hideCloseButton.classList.remove("open");
 });
