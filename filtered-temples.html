@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> WDD 131 - Dynamic Web Fundamentals - Picture Album - Benjamin Urquia </title>
+        <meta name="description" content="A picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.">
+        <meta name="author" content="Benjamin Urquia">
+    
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <nav id="navMenu" class="nav">
+                <button id="close-hamburger" class="close-menu-button">X</button>
+                <ul id="navList" class="nav-list">
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Old</a></li>
+                    <li><a href="#" target="_blank">New</a></li>
+                    <li><a href="#" target="_blank">Large</a></li>
+                    <li><a href="#" target="_blank">Small</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger" class="open-menu-button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        </header>
+
+        <main>
+            <p>HOME</p>
+            <div class="figure-grid">
+                
+            </div>
+        </main>
+        
+        <footer>
+            <p>©<span id="currentyear"></span> - Benjamin Urquia - Argentina</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html>

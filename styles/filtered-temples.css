@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto ;
+    grid-template-columns: auto;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0e6d6;
+    padding: 10px 20px;
+}
+
+footer {
+    background: #f0e6d6; 
+    padding: 1rem;
+    text-align: center;
+}
+
+    /* CLOSED MENU */
+
+.nav-list{
+    display: none;
+    list-style-type: none;
+}
+
+.open-menu-button {
+    display: block;
+    background-color: #333333;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.0rem;
+    padding: 10px 15px;
+}
+
+.close-menu-button{
+    display: none;
+}
+
+
+/* OPEN MENU*/
+
+.close-menu-button.open{
+    display: block;
+    background-color: #333333;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.5rem;
+    padding: 5px 7.5px;
+}
+
+.nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+    background-color: #f0e6d6;
+    border: 1px solid #d3be9b;
+    border-radius: 5px;
+}
+    
+.nav-list.open {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+main p{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* IMAGES */
+
+div{
+    padding: 1rem;
+}
+
+.figure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.figure-grid figure {
+    text-align: center;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}

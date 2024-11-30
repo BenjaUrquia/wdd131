@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: center;
+}
+
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+img {
+    padding: 1rem;
+    animation: fadeFromBlack 3s ease-in-out;
+}
