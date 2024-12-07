@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>W05 Assignment: Product Review Form</title>
+    <meta name="description" content="W05 Assignment: Product Review Form WDD 131 - Dynamic Web Fundamentals by Benjamin Urquia">
+    <meta name="author" content="Benjamin Urquia">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -18,10 +24,10 @@
     <main>
         <form method="get" action="review.html">            
             <fieldset>
-                <label for="product"><legend>*Product Name:</legend></label>
-                <select id="product" name="product" required>
-                  <option value="" disabled selected>Select a Product ...&#9662;</option>
-                </select>
+              <legend><label for="product">*Product Name:</label></legend>
+              <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...&#9662;</option>
+              </select>
             </fieldset>
         
             <fieldset>
@@ -51,8 +57,8 @@
             </fieldset>
         
             <fieldset>
-                <label for="installation-date"><legend>*Date of Installation:</legend></label>
-                <input type="date" id="installation-date" name="installation_date" required>
+              <legend><label for="installation-date">*Date of Installation:</label></legend>
+              <input type="date" id="installation-date" name="installation_date" required>
             </fieldset>
             
             <fieldset class="checkbox">
@@ -76,12 +82,12 @@
             </fieldset>
         
             <fieldset class="written">
-                <label for="review"><legend>Written Review:</legend></label>
-                <textarea id="review" name="review" rows="4" cols="50"></textarea>
+              <legend><label for="review">Written Review:</label></legend>
+              <textarea id="review" name="review" rows="4" cols="50"></textarea>
             </fieldset>
 
             <fieldset class="username">
-              <label for="username"><legend>Your Name:</legend></label>
+              <legend><label for="username">Your Name:</label></legend>
               <input type="text" id="username" name="username">
             </fieldset>
             
