@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 2em;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Check if localStorage is available
+            if (typeof(Storage) !== "undefined") {
+                // Retrieve the current counter or initialize it
+                let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+
+                // Increment the counter
+                reviewCount += 1;
+
+                // Store the updated counter back in localStorage
+                localStorage.setItem("reviewCounter", reviewCount);
+
+                // Display the counter (optional)
+                const counterDisplay = document.getElementById("review-counter");
+                if (counterDisplay) {
+                    counterDisplay.textContent = `You have completed ${reviewCount} reviews.`;
+                }
+            } else {
+                console.warn("Local Storage is not supported in this browser.");
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p id="review-counter"></p>
+    </main>
+</body>
+</html>
