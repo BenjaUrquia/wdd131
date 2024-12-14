@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Deal & Play</title>
+    <meta name="description" content="Contact Us page of Deal&Play, form and contact s page.">
+    <meta name="author" content="Benjamin Urquia">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Deal & Play</h1>
+        <nav class="navBar">
+            <ul class="ulBar">
+                <li><a href="project-home.html">Home</a></li>
+                <li><a href="project-france-suited.html">France-suited</a></li>
+                <li><a href="project-spanish-suited.html">Spanish-suited</a></li>
+                <li><a href="learn-more.html">Learn More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h6>If you want to know more about us and the rules of card games, please contact us! Fill out the form below and we will contact you! We are waiting for you!</h6>
+        <section class="form">
+            <h1>Contact Us</h1>
+            <form action="messages.html" method="post" onsubmit="saveMessage(event)">
+                <fieldset>
+                    <label for="name">Name*:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname">
+
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(800) 555-0100">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </fieldset>
+                <p class="text-3">*Requiered</p>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>©<span id="currentyear"></span> - Benjamin Urquia - Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
